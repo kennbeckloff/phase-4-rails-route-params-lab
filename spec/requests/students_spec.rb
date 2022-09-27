@@ -10,7 +10,8 @@ RSpec.describe "Students", type: :request do
 
   let!(:first_student) { Student.first }
   let!(:second_student) { Student.second }
-
+#  Students GET /students/:id returns the first student
+describe 
   describe "GET /students/:id" do
     it 'returns the first student' do
       get "/students/#{first_student.id}"
